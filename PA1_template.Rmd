@@ -34,7 +34,7 @@ median(total.steps, na.rm = TRUE)
 
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png)
 
-The mean is 9354 and median is 10395.
+The mean is **9354** steps per day and median is **10395** steps per day.
 
 
 ## What is the average daily activity pattern?
@@ -118,6 +118,8 @@ median(total.steps)
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
 
+After imputing the missing values, the mean is **10766** steps per day and median is **10766** steps per day.
+
 Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
 Yes, these values differ considerably. 
@@ -159,3 +161,4 @@ ggplot(steps.per.interval, aes(interval, steps)) +
 
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png)
 
+From the above graph, we see that the weekends clearly have more number of peaks over a 100 steps (in a 5-min interval) than weekdays. However, the overall peak activity (206 steps in a 5-min interval) from all intervals occured on a weekday. 
