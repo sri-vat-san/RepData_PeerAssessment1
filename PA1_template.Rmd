@@ -35,6 +35,8 @@ mean(total.steps, na.rm = TRUE)
 median(total.steps, na.rm = TRUE)
 ```
 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png)
+
 The mean is 9354 and median is 10395.
 
 
@@ -52,6 +54,8 @@ ggplot(data = steps.per.interval, aes(x = interval, y = steps)) +
         ylab("average number of steps taken") + 
         ggtitle("Average daily activity pattern")
 ```
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png)
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -115,6 +119,8 @@ mean(total.steps)
 median(total.steps)
 ```
 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
+
 Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
 Yes, these values differ considerably. 
@@ -152,3 +158,7 @@ ggplot(steps.per.interval, aes(interval, steps)) +
     ylab("average number of steps taken") + 
     ggtitle("Average daily activity pattern (imputed data)")
 ```
+
+
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png)
+
